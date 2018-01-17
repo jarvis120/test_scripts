@@ -1,0 +1,7 @@
+#!/bin/bash
+if grep "^$username:" /etc/passwd >/dev/null
+then
+	echo "User '$username' found in $PASSWD_FILE file."
+else
+	echo "User '$username' not found in $PASSWD_FILE file."
+fi
